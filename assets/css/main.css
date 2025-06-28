@@ -1,0 +1,103 @@
+.header {
+    height: 120px;
+    background: linear-gradient(180deg, #c92d24, #f75d35);
+}
+
+.header_navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navlist {
+    display: inline-block;
+    margin: 12px 64px;
+}
+
+.navlist__item:last-child {
+    border-left: 1px solid white;
+}
+
+.navlist:first-child .navlist__item:last-child .navlist__link {
+    cursor: text;
+}
+
+.navlist:first-child .navlist__item:last-child:hover {
+    opacity: 1;
+}
+
+.navlist__item {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0 8px;
+    position: relative;
+}
+
+.navlist__item:hover {
+    opacity: 0.6;
+}
+
+.navlist__item:hover .download-area {
+    display: block;
+    background-color: #fff;
+}
+
+.navlist__link {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 1;
+    line-height: 30px;
+}
+
+.navlist__link--strong {
+    font-weight: 600;
+}
+
+
+.navlist__icon {
+    padding: 0 8px;
+    font-size: 20px;
+    color: #fff;
+}
+
+/* header QR-code */
+
+.download-area {
+    display: none;
+    position: absolute;
+    border-radius: 2px;
+    left: 0;
+    right: 0;
+    min-width: 190px;
+    min-height: 100px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px #00000098;
+}
+
+.download-area__QR {
+    margin: auto;
+    margin-top: 16px;
+    width: 200px;
+    height: 200px;
+    background: url(/assets/img/QR-download.png) center /cover;
+}
+
+.download-area__platform {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.ch-play-icon {
+    height: 35px;
+    background: url(../img/ch-play.png) center / contain no-repeat;
+}
+
+.apple-icon {
+    height: 35px;
+    background: url(../img/apple.png) center / contain no-repeat;
+}
