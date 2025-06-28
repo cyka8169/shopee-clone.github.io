@@ -80,7 +80,7 @@
     margin-top: 16px;
     width: 200px;
     height: 200px;
-    background: url(/assets/img/QR-download.png) center /cover;
+    background: url(../img/QR-download.png) center /cover;
 }
 
 .download-area__platform {
